@@ -1,0 +1,68 @@
+﻿namespace Games.Common.Enums
+{
+    public enum EnumMenuItem
+    {
+        RoleManagement = 3,
+        Users = 4,
+        RetailerManagement = 5,
+        Retailer = 6,
+        ApprovalQueue = 7,
+        InviteRetailer = 8,
+        Roles = 9,
+        ProductManagement = 10,
+        Products = 11,
+        ProductTags = 12,
+        ProductTagCollection = 13,
+        AlertBanners = 15,
+        RetailerGroup = 16,
+        SKUClassifications = 17,
+        ConfigureOrderingDays = 18,
+        UploadDeliverySchedule = 20,
+        AllocationPool = 21,
+        ConfigureHeroBanners = 22,
+        EmailBlast = 23,
+        AuditHistory=25,
+        HomePages = 26,
+        Organizations = 27,
+        RelatedProducts = 28,
+        Categories = 29
+    }
+    public enum EnumAdminPageID
+    { 
+        InviteRetailer = 1,
+        RetailerDashboard = 2,
+        AddEditRetailer = 3,
+        ApprovalQueue = 4,
+        EditApprovalQueu = 5,
+        RetailerGroup = 6,
+        AddEditRetailerGroup = 7,
+        UserDashboard = 8,
+        AddEditUser = 9,
+        RoleDashboard = 10,
+        AddEditRole = 11,
+        ProductManagement = 12,
+        EditProduct = 13,
+        ProductTags = 14,
+        AddEditProductTags = 15,
+        Collections = 16,
+        AddEditCollections = 17,
+        SKUClassification = 18,
+        AddEditSKUClassification = 19,
+        AlertBanners = 20,
+        AddEditAlerBanner = 21,
+        OrderDayConfiguration = 22,
+        UploadDeliverySchedule = 23,
+        AllocationPool = 24,
+        ConfigureHeroBanners = 25,
+        AddEditConfigureHeroBanner = 26,
+        CreateEmailBlast = 27,
+        AuditHistory=28,
+        HomePages = 29,
+        CreateHomePage = 30,
+        Organization = 31,
+        RelatedProducts = 32,
+        Categories = 33,
+        RelatedProduct = 34
+    }
+
+}

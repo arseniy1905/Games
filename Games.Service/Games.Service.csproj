@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup Label="Globals">
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <CodeAnalysisRuleSet>..\.sonarlint\ocscsharp.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Optimize>false</Optimize>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\UserStore.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.ExpressionMapping" Version="3.1.1" />
+    <PackageReference Include="ClosedXML" Version="0.95.3" />
+    <PackageReference Include="CsvHelper" Version="15.0.5" />
+    <PackageReference Include="ExpertPdf.HtmlToPdf.NetCore" Version="15.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.6" />
+    <PackageReference Include="Newtonsoft.Json.Schema" Version="3.0.13" />
+    <PackageReference Include="SendGrid" Version="9.16.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Games.Common\Games.Common.csproj" />
+    <ProjectReference Include="..\Games.DataModel\Games.DataModel.csproj" />
+    <ProjectReference Include="..\Games.IRepository\Games.IRepository.csproj" />
+    <ProjectReference Include="..\Games.IService\Games.IService.csproj" />
+    <ProjectReference Include="..\Games.ViewModel\Games.ViewModel.csproj" />
+  </ItemGroup>
+
+</Project>
